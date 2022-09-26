@@ -1,0 +1,28 @@
+ .main-nav {
+    display: flex;
+    background-color: #202737;
+    opacity: 80%;
+    width: 100%;
+}
+h1 {
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    margin-right: 15%;
+}
+
+li {
+    color: white;
+    padding: 10px;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+    
+}
+
