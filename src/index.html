@@ -9,55 +9,58 @@
 </head>
 <body>
     <header>
-        <!-- Lägga sticky så att den följer med -->
         <nav class="main-nav">
-            <h1 clas="h1">BARBERSHOP</h1>
+            <h1 class="h1">BARBERSHOP</h1>
             <ul>
-                <li class="home">HOME</li>
-                <li>ABOUT</li>
-                <li>PRICES</li>
-                <li>GALLERY</li>
-                <li>TEAM</li>
-                <li>BLOG</li>
-                <li>CONTACT</li>
-            </ul>    
+                <!-- <li class="home">HOME</li> används inte i mobil -->
+                <li id="menu-button">Menu</li>
+            </ul>
+            <!-- <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PRICES</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">TEAM</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul> -->
         </nav>
     </header>
-    <main class="main-body">
-        <!-- Lägga in som section eller div? -->
-        <div class="grid-container">
+    <main>
         <!-- <h2>WELCOME TO BARBERSHOP</h2>
         <h3>WE WILL MAKE <span>STYLE OF YOUR DREAMS</span></h3>
         <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisemantic country, in which roasted parts of sentences fly into your mouth.</p>
-        <button>LEARN MORE ABOUT US</button>
+        <span class="About-box1">LEARN MORE ABOUT US</span>
         <img/> bakgrundsbild ska läggas in här -->
-        <div class="Box1"><img src="barbershop-unsplash.jpg" alt="bakgrundsbild" height="700px" width="100%"/></div>
-        <div class="Box2">2</div>
-        <div class="Box3">3</div>
-        <div class="Box4">4</div>
-        <div class="Box5">5</div>
+    <section class="main-body">    
+        <div class="Box1">
+            <div class="boxcontent1"> 
+                <h2 class="header2-box1">WELCOME TO BARBERSHOP</h2>
+                <h3 class="header3-box1">WE WILL MAKE <span class="fontstyle">YOUR <br> STYLE</span> OF YOUR DREAMS</h3>
+                <p class="p-box1">A small river named Duden flows by their place and supplies it with the necessary regelialia. <br> It is a paradisemantic country, in which roasted parts of sentences fly into your mouth.</p>
+                <span class="about-box1">LEARN MORE ABOUT US</span>
+            </div> 
         </div>
-        <div>
-            <img>
+    </section>
+    <section class="service" >    
+        <div class="service-box1" >
+            <img class="imghair" src="hairstyles.png" alt="a man getting his hair done" height="120px" width="120px"/>
             <h4>HAIR STYLES</h4>
             <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisemantic country, in which roasted parts</p> 
         </div>
-        <div>
-            <img/>
+        <div class="service-box2">
+            <img src="beardtrim.png" alt="guy with beard getting a trim" height="120px" width="120px"/>
             <h4>BEARD TRIM</h4>
             <p> A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisemantic country, in which roasted parts</p>
         </div>
-        <div>
-            <img/>
+        <div class="service-box3">
+            <img src="hotshave.png" alt="man getting a hotshave at the barber" height="120px" width="120px"/>
             <h4>HOT SHAVE</h4>
             <p> A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisemantic country, in which roasted parts</p>
-        </div>  
-        <!-- /end section?= -->
-        <!-- ny section? -->
+        </div>
+    </section>      
         <h2>ABOUT BARBER</h2>
         <h3>A SMOOTH BARBER EXPERIENCE IN YOUR TOWN</h3>
         <p>Far far away, behind the word mountains, far from the countries Vokalia and Cosonantia, there live the blind texts. Seperated they live in Booksmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-        <!-- Knapp eller a tag? -->
         <a>20 YEAR OF EXPERIENCE</a>
         <!-- Lägga in sido bild. -->
         <!-- dessa divar är för services -->
