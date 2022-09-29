@@ -1,27 +1,33 @@
+@font-face {
+    font-family: 'Barlow';
+    src: url("BarlowSemiCondensed-Black.ttf"), format("truetype");
+  }
 @media screen and (min-width : 400px) {
     header {
         position: sticky;
         top: 0;
         width: 100%;
  }
+ 
  .main-nav {
     display: flex;
     background-color: #202737;
     opacity: 70%;
     width: 100%;
     height: 40px;
+    margin-top: -50px;
     justify-content: space-between;
     align-items: center;
 }
 
 h1 {
     color: white;
-    font-family: Barlow Semi Condensed;
+    font-family: 'Barlow';
     margin-left: 20px; 
     /* använda h1, h2, för att få font på alla rubriker. */
 }
-#menu-button {
-    color: slategray;
+.menu-button {
+    color: whitesmoke;
     border: solid slategray 1px;
     font-size: larger;
     margin-right: 15px;
@@ -109,14 +115,18 @@ span.about-box1 {
     text-align: center;
   }
 
- .about {
+.about {
     display: flex;
     flex-direction: column;
 
- } 
+} 
 
-.about > img {
-    width: 100%;
+.about > img.about.img {
+    display: block;
+    width: 300px;
+    height:400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about > h2  {
@@ -129,6 +139,9 @@ span.about-box1 {
 font-size: 1.2em;
 margin-bottom: 0;
 margin-top: 3px;
+}
+.about > p {
+    font-size: 18px;
 }
 
 .about > div {
@@ -169,7 +182,12 @@ margin-top: 3px;
     margin-bottom: 20px;
 }
 .testimonial{
+    display: flex;
+    flex-direction: column;
     background-color: rgb(235 232 222);
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
 }
 .testimonial > h2 {
     color: rgb(191, 146, 91);
@@ -181,20 +199,24 @@ margin-top: 3px;
     text-align: center;
     font-size: 30px;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
 }
 .testimonialbox {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: whitesmoke;
-    height: 200px;
-    width: 80%px;
-    margin: 15px;
+    height: 180px;
+    width: 400px;
+    margin: 20px;
     border-radius: 10px ;
 }
 .p-testimonial {
+    display: flex;
     text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 5px;
 }
 div.img-testimonial > img {
     height: 80px;
@@ -216,6 +238,111 @@ div.textcustomer > span {
     color: rgb(183, 134, 73);
 
 }    
+.p-testimonial > div.quotes {
+    display: flex;
+    background-color: rgb(183, 134, 73);
+    font-size: 30px;
+    height: 40px;
+    width: 120px;
+    border-radius: 50%;
+    margin-top: -23px;
+    color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+}
+footer {
+    background-color: black;
+}
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 10px;
+}
+.social-media > div {
+    display: flex;
+    margin-top: 15px;
+    background-color: rgb(183, 134, 73);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    
+}
+
+.social-media > div > .fa-brands {
+    font-size: 25px;
+    color: whitesmoke;
+}
+.explore {
+ color: whitesmoke;
+}
+.explore > h3 {
+    margin-left: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+.explore > ul {
+    padding: 0px;
+}
+.explore > ul > li {
+    color: rgb(146, 139, 139);
+    list-style: none;
+    margin: 15px;
+}
+a.lists {
+    color: rgb(146, 139, 139);
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+a.lists::before {
+    content:'>';
+    margin-right: 15px;
+    margin-left: 0px;
+}
+div.social-media > .fa-solid {
+    color: rgb(183, 134, 73);
+    margin-right: 15px;
+    font-size: 20px;
+}
+.contact-container {
+    display: flex;
+    flex-direction: row;
+}
+.contact-container-logos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: rgb(183, 134, 73);
+    margin-left: 15px;
+    gap: 15px;
+}
+.li-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 15px;
+}
+.contact-ul {
+    padding: 0px;
+    margin: 0;
+}   
+.contact-li {
+    font-size: 18px;
+    list-style: none;
+    color: rgb(146, 139, 139);
+    margin-left: 10px;
+}
+.mailto {
+    color: rgb(146, 139, 139);
+    text-decoration: none;
+}
 
 }
 
